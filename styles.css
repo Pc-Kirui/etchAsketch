@@ -1,6 +1,4 @@
 html {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: "Tangerine", monospace;
 }
@@ -10,30 +8,62 @@ body {
   align-items: center;
   justify-content: center;
   background: #acbfa4;
+  box-sizing: inherit;
 }
 .container {
-  /* display: flex; */
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  height: 75%;
-  width: 50%;
-  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+  font-family: "Tangerine", monospace;
+  height: 90vh;
+  width: 960px;
   background-color: #ff1b1c;
   border-radius: 32px;
-  /* align-items: center; */
-  /* justify-content: center; */
   color: #e2e8ce;
+  position: relative;
 }
 .header {
-  margin: 0;
+  margin-top: 8px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   font-size: 36px;
   text-transform: capitalize;
 }
+.header h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
 .header p {
   font-size: 32px;
+}
+.popup {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #262626;
+  font-size: 24px;
+}
+.popup input {
+  border-radius: 8px;
+  border-style: none;
+  padding: 8px;
+}
+.colors {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 8px;
+  text-align: center;
+  width: 100%;
+}
+.colors button {
+  border-radius: 100%;
+  background-color: #ff7f11;
+  border-style: none;
+  padding: 16px;
+  font-family: "Dancing Script", "Tangerine", monospace;
+  color: #e2e8ce;
+  font-size: 21px;
 }
