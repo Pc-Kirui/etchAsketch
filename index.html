@@ -11,6 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="resets.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
@@ -19,7 +26,22 @@
         <h1 class="title">etch-a-sketch</h1>
         <p class="screen">Screen</p>
       </div>
+      <div class="popup">
+        <label for="grid">Number of squares</label>
+        <input
+          type="number"
+          id="grid"
+          name="grid"
+          placeholder="No of squares"
+        />
+      </div>
       <div class="etch-a-sketch"></div>
+      <div class="colors">
+        <button>Black</button>
+        <button>Gray</button>
+        <button>Rainbow</button>
+        <button>Reset</button>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
