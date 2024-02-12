@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: "Tangerine", monospace;
+  font-family: 'Tangerine', monospace;
 }
 body {
   display: flex;
@@ -13,7 +13,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  font-family: "Tangerine", monospace;
+  font-family: 'Tangerine', monospace;
   height: 90vh;
   width: 960px;
   background-color: #ff1b1c;
@@ -43,12 +43,19 @@ body {
   justify-content: center;
   color: #262626;
   font-size: 24px;
+  gap: 16px;
 }
-.popup input {
-  border-radius: 8px;
+.popup input,
+button {
+  border-radius: 16px;
   border-style: none;
-  padding: 8px;
+  padding: 10px;
+  font-family: 'Dancing Script', 'Tangerine';
+  font-size: 16px;
+  background-color: #ff7f11;
+  color: #e2e8ce;
 }
+
 .colors {
   display: flex;
   align-items: center;
@@ -59,11 +66,29 @@ body {
   width: 100%;
 }
 .colors button {
-  border-radius: 100%;
+  border-radius: 16px;
   background-color: #ff7f11;
   border-style: none;
-  padding: 16px;
-  font-family: "Dancing Script", "Tangerine", monospace;
+  padding: 8px;
+  font-family: 'Dancing Script', 'Tangerine', monospace;
   color: #e2e8ce;
   font-size: 21px;
+}
+
+.sketch-pad {
+  background: black;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.cell {
+  border: 1px solid #e2e8ce;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  background: #acbfa4;
+  color: #ff1b1c;
+  text-align: center;
 }
